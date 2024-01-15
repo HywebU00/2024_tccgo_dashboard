@@ -1,0 +1,62 @@
+// src/sass/variables.scss
+
+// Globals
+$border-radius-root: 6px;
+$font-size-root: 16px;
+$remFontSize: 16;
+$primary: #045fa9;
+$primaryActive: #1976d21f;
+$primaryDark: #17214c;
+// $secondary: #46b9e7;
+
+$primaryLight: #5ad6f3;
+$primaryDate: #2979ff;
+$success: #67c23a;
+
+$gray: #f0f0f0; //#e9ecef;
+$grayLight: #ececec;
+$gray3: #828282;
+$gray2: #4b4b4b;
+
+$dark: rgba(0, 0, 0, 0.87);
+$error: #ff5252;
+$errorSecondary: #ff006c;
+//背景色
+$backgroundColor: $gray;
+$boxShadow: rgba(51, 64, 76, 0.2) 0px 8px 24px;
+
+//mediaquery
+$screen-lg: 1400px !default; //電腦
+$screen-md-max: 992px !default; //平板
+$screen-sm-max: 768px !default; //手機
+$screen-xs-max: 576px !default; //極小尺寸 - hyui
+$screen-xs-mobile-max: 320px !default; //極小尺寸 - flex
+
+//borderRadius
+$radius: 1rem;
+
+$boxShadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+// 字型設定
+$fontFamily: 'Noto Sans', 'Noto Sans TC', Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+
+$fontSize: 1em;
+$text-shadow: #000000a1 0.1em 0.1em 0.2em;
+// rem基本尺寸
+$remFontSize: 16;
+
+$secondaryColor: #747474; //#91746c;
+$aLinkColor: mix(#fff, #363636, 15%); //#89554a;
+$grayText: #828282;
+$thirdColor: mix(#fff, #363636, 15%); //#7b1e1b;
+
+//側欄背景色
+$defaultBg: #f6f1ef;
+$defaultPrimary: #363636; // #331919;
+$defaultLight: #33d3eb; //#fc590f;
+$defaultSecondary: #087ea6; //#bf5f46;
+$defaultThird: #d78669;
+$defaultGradient: linear-gradient(to bottom, #0fc8e1 0%, #048e9b 100%); //
+$defaultGradientBg: $defaultGradient;
+$defaultTheadColor: #747474;
+$defaultTbodyColor: #f7f7f5;

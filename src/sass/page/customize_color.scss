@@ -1,0 +1,223 @@
+.v-theme--default {
+  .content {
+    background: #cecece url('@/assets/main_bg.png') repeat left top;
+  }
+  .navDrawer {
+    > .v-navigation-drawer__content {
+      .v-list-item {
+        &.active {
+          background: $primaryLight;
+          color: #363636;
+          img {
+            filter: invert(1);
+          }
+        }
+        &:hover {
+          background: mix(#fff, #90e7f4, 30%);
+        }
+        .v-list-item__overlay {
+          background: $defaultSecondary;
+        }
+      }
+
+      .v-list-group {
+        > .v-list-item {
+          &.v-list-item--active {
+            background: $primaryLight;
+            color: #363636;
+            img {
+              filter: invert(1);
+            }
+          }
+        }
+      }
+    }
+    .text-navText {
+      &::-webkit-scrollbar-thumb {
+        background: lighten($defaultLight, 35);
+      }
+    }
+  }
+
+  .userInfo {
+    // background: $GradientBg;
+    border-radius: 0.25rem;
+    &:hover {
+      button {
+        background: #fff;
+        transition: 0.5s all;
+        span {
+          color: $defaultSecondary;
+        }
+      }
+    }
+  }
+  .navDrawer.hidden {
+    .userInfo {
+      background: unset;
+      button {
+        background-color: unset;
+        span {
+          color: $defaultSecondary;
+        }
+      }
+    }
+  }
+  .navTitle {
+    .userLoginCard {
+      .card {
+        background: $defaultGradient;
+      }
+      .userLoginCardBtn {
+        background-color: $defaultBg;
+
+        .material-icons-round {
+          color: $defaultThird;
+          background-color: $defaultBg;
+        }
+        span {
+          color: $defaultPrimary;
+        }
+      }
+    }
+  }
+  .fontBtnContainer {
+    button {
+      background: $primaryLight;
+      color: #fff;
+    }
+  }
+  .infoBtnContainer {
+    ul {
+      &::-webkit-scrollbar-thumb {
+        background: lighten($defaultLight, 30);
+      }
+    }
+    li {
+      div {
+        &::before {
+          background: $defaultLight;
+        }
+      }
+    }
+  }
+  .page {
+    .searchGrp {
+      .searchMoreBtn {
+        background: $primaryLight;
+      }
+    }
+    .filterList {
+      .formContent {
+        .item {
+          border-right: 1px solid$defaultThird;
+        }
+        .functionBtnGrp > span {
+          border-right: 1px solid$defaultThird;
+        }
+      }
+    }
+    .pageContent {
+      &::-webkit-scrollbar-thumb {
+        background: #747474; //#331919c2;
+      }
+    }
+  }
+  .mpPage {
+    .pageContent {
+      .title {
+        span.icon {
+          background: $defaultLight;
+        }
+      }
+    }
+    .linkSection {
+      .linkBtn {
+        background: $primaryLight !important; //$GradientBg;
+        color: $defaultPrimary !important;
+      }
+    }
+    .newsSection {
+      .newCard {
+      }
+    }
+  }
+  //table style
+  .v-table {
+    .v-table__wrapper {
+      > table {
+        > thead {
+          // background: $theadColor;
+          background: #f3f3f3;
+          border-top: solid 1px #ddd;
+          border-bottom: solid 2px #c1c0c0;
+
+          > tr > th {
+            // color: #fff;
+            color: $defaultPrimary;
+            border-top: solid 1px #ddd;
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: $defaultTbodyColor;
+      }
+      &:not(:last-child) {
+        td {
+          border-bottom: unset;
+        }
+      }
+    }
+  }
+  .v-data-table {
+    .v-table__wrapper {
+      > table {
+        > thead > tr th {
+          height: rem(40);
+
+          background: #f3f3f3;
+          border-top: solid 1px #ddd;
+          border-bottom: solid 2px #c1c0c0;
+        }
+        tbody {
+          tr {
+            border-bottom: solid 1px #ddd;
+          }
+        }
+      }
+    }
+  }
+  .v-tabs {
+    margin: 0 1rem;
+    .v-btn__content {
+      color: #363636; //$primary;
+      font-weight: bold;
+      // font-size: 1.1em;
+    }
+    .v-tab__slider {
+      color: $defaultLight;
+      height: 3px;
+    }
+  }
+
+  //v-dialog Btn style
+  &.v-dialog {
+    .v-card-actions {
+      .v-btn {
+        margin: 0 1rem 0.5rem 0;
+        @include screen('tablet') {
+          width: 78px;
+        }
+        &.submit {
+          background: $primaryLight !important;
+          color: $defaultPrimary !important;
+        }
+      }
+    }
+  }
+}

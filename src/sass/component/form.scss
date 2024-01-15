@@ -1,0 +1,425 @@
+.formGrp {
+  label {
+    color: $defaultPrimary;
+    font-weight: 500;
+    margin: 0 0.5rem;
+  }
+  margin: 0;
+  input,
+  select {
+    padding: 0 0.25rem;
+  }
+  &.v-row {
+    > div {
+      padding: 0.5rem;
+      .v-row {
+        > div {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.infoGrp {
+  span {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    color: $defaultPrimary;
+  }
+}
+input:-internal-autofill-selected {
+  background: #fff !important;
+}
+
+.formContainer {
+  margin-bottom: 1rem;
+  .formTitle {
+    max-width: 200px;
+    flex: 0 0 200px;
+  }
+  label {
+    abbr {
+      color: $defaultLight;
+      text-decoration: none;
+    }
+  }
+  .checkGrp {
+    display: flex;
+    flex-wrap: wrap;
+    .v-input {
+      display: contents;
+    }
+    @include screen('tablet') {
+      display: block;
+    }
+  }
+  .formGrp {
+    .v-row {
+      margin-top: -13px;
+      margin-bottom: -13px;
+      margin-bottom: 0.5rem;
+
+      .v-col {
+        .formGrp {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .tilde {
+      margin: 0.5rem;
+    }
+    .formGrpTitle {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      padding: 0.75rem 0.5rem;
+      margin-top: 0.5rem;
+      @include screen('tablet') {
+      }
+    }
+    &:has(.v-input .v-input__details) {
+      margin-bottom: 0rem;
+    }
+    .v-checkbox-btn {
+      label {
+        max-width: calc(100% - 2rem);
+        flex-basis: fit-content;
+        margin-left: 0.25rem;
+      }
+    }
+    .info {
+      margin-bottom: rem(20);
+    }
+    @include screen('tablet') {
+      flex-wrap: wrap;
+      .formTitle {
+        width: 100%;
+        max-width: unset;
+        flex-basis: auto;
+        margin-bottom: -0.75rem;
+      }
+    }
+  }
+  .formGrp.v-row.formGrp_2 {
+    margin-top: 2rem;
+    > div {
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    .formGrp {
+      margin: 0;
+    }
+  }
+  .formGrp.v-row {
+    min-height: rem(45);
+    margin-top: 0.25rem;
+    align-items: center;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .v-radio-group {
+    label {
+      margin-left: 0rem;
+    }
+  }
+
+  .dataForm {
+    .infoTitle {
+      padding-right: 1.25rem;
+      color: $defaultPrimary;
+      font-weight: 500;
+      margin-left: -0.5rem;
+      display: flex;
+      text-align: end;
+      justify-content: flex-end;
+      color: $dark;
+      position: relative;
+      min-height: 2.75rem;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        left: 8px;
+        background-color: $secondaryColor;
+        height: 2px;
+        bottom: -2px;
+        width: calc(100% - 24px);
+      }
+      @include screen('notebook') {
+        width: 100%;
+        max-width: unset;
+        flex-basis: auto;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .infoText {
+      margin: 0 0.75rem;
+      @include screen('tablet') {
+        margin: 0;
+      }
+    }
+
+    .infoGrp,
+    .formGrp {
+      margin: 0 0.25rem;
+      @include screen('tablet') {
+        flex-wrap: wrap;
+      }
+      label,
+      .infoTitle > span {
+        margin-right: 0;
+        @include screen('tablet') {
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      border-bottom: 2px solid $gray;
+      position: relative;
+      margin-bottom: 0.25rem;
+      margin-top: 0.2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include screen('tablet') {
+        &:after {
+          display: none;
+        }
+      }
+
+      .formGrp {
+        padding-bottom: 0;
+        border-bottom: 0;
+        padding: 0;
+        &:after {
+          display: none;
+        }
+      }
+      .v-field__field,
+      .v-field {
+        box-shadow: none;
+        background: $gray;
+        border-radius: 0.5rem;
+      }
+      .v-input {
+        border-radius: 0.5rem;
+        &.v-radio-group {
+          background: unset;
+          .v-input__control {
+            border: none;
+          }
+        }
+        .v-input__control {
+          margin-top: 0.25rem;
+          border: 1px solid lighten($gray3, 20);
+          border-radius: 0.5rem;
+        }
+      }
+      .checkGrp {
+        .v-input__control {
+          border: none;
+        }
+      }
+    }
+    .formGrp_2 {
+      margin-top: 1rem;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &.v-container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+.textEdit {
+  margin-bottom: 1rem;
+  border: 1px solid lighten($gray3, 20);
+  border-radius: rem(8);
+  overflow: hidden;
+  .fr-box.fr-basic {
+    border-radius: 4px;
+
+    .fr-toolbar,
+    .fr-wrapper,
+    .fr-second-toolbar {
+      border: unset;
+    }
+  }
+}
+.fr-box.fr-basic,
+.fr-toolbar,
+.fr-box.fr-basic .fr-wrapper,
+.fr-second-toolbar {
+  background: #f0f0f0 !important;
+}
+.hyUpload {
+  &.upload-area {
+    border: none;
+    border-radius: 4px;
+    background: #f0f0f0;
+  }
+  thead {
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    th {
+      padding: 0.5rem;
+    }
+  }
+  p {
+    padding: 1rem;
+    .v-btn {
+      background: #91746c;
+      .v-btn__content {
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+  .v-btn--variant-tonal {
+    .v-btn__underlay {
+      background: unset;
+    }
+  }
+  .textInfo {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    padding: 0rem 1rem 0.5rem 1rem;
+    color: mix(#fff, $defaultPrimary, 20%);
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.datePicker {
+  margin-bottom: rem(6);
+  .v-field__field {
+    height: rem(44);
+    position: relative;
+    input {
+      height: rem(38);
+      position: absolute;
+      top: 2px;
+      width: 100%;
+      left: 0;
+      padding: 0 0.5rem;
+    }
+  }
+}
+.moveForm {
+  .v-banner--density-default.v-banner--one-line {
+    padding: 0;
+  }
+  .v-banner__content {
+    margin-bottom: 4px;
+  }
+}
+//datepicker套件ＣＳＳ修改
+.dp__range_end,
+.dp__range_start,
+.dp__overlay_cell_active,
+.dp__active_date {
+  background: $defaultPrimary !important;
+  border: 1px solid $defaultPrimary;
+  color: #fff;
+}
+.dp__today {
+  border: 1px solid $defaultPrimary !important;
+}
+//動態表單
+.tableForm {
+  margin-bottom: 1rem;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    line-height: 1.5rem;
+    color: $defaultPrimary;
+  }
+  tr {
+    height: rem(46);
+  }
+  td {
+    padding: 0.25rem 0.5rem;
+  }
+  input,
+  textarea {
+    &:focus,
+    &:active,
+    &:focus-visible {
+      outline: none;
+      border: #91746c 1px solid !important;
+    }
+  }
+  input[type='button'] {
+    background: $defaultPrimary;
+    font-size: 1em;
+    padding: 0 0.5rem;
+    color: #fff;
+    margin: 0 0.25rem;
+  }
+  input[type='text'],
+  input[type='number'] {
+    background: #fff;
+    padding: 0 0.25rem;
+
+    border: #ccc 1px solid;
+    border-radius: 0.5rem;
+  }
+  textarea {
+    background: #fff;
+    border: #ccc 1px solid;
+    border-radius: 6px;
+    padding: 0.25rem;
+    width: 100%;
+
+    margin: 0.25rem 0;
+  }
+  .form_content {
+    .check_grp {
+      &.form_inline {
+        display: flex;
+      }
+      label {
+        input {
+          width: 1rem;
+          margin-right: 0.5rem;
+          accent-color: $secondaryColor;
+        }
+        margin-right: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .radio_grp {
+      &.form_inline {
+        display: flex;
+      }
+      label {
+        input {
+          width: 1rem;
+          accent-color: $secondaryColor;
+          margin-right: 0.5rem;
+        }
+        display: flex;
+        margin-right: 0.5rem;
+        align-items: center;
+      }
+    }
+  }
+}

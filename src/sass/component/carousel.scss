@@ -1,0 +1,50 @@
+.carousel {
+  max-width: 1280px;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  height: 600px !important;
+  @include screen('notebook') {
+    height: 420px !important;
+  }
+  @include screen('tablet') {
+    height: 300px !important;
+  }
+
+  button {
+    padding: 0.5rem;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    span {
+      display: block;
+      width: rem(53);
+      height: rem(53);
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .next {
+      background: url('@/assets/icon/icon_arrow_r.png') no-repeat bottom center;
+    }
+    .prev {
+      background: url('@/assets/icon/icon_arrow_l.png') no-repeat bottom center;
+    }
+  }
+  .carouselTitle {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    transition: all 0.5s;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: em(20);
+    opacity: 0;
+  }
+  &:hover {
+    .carouselTitle {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}

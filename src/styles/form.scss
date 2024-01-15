@@ -1,0 +1,50 @@
+.v-field__input {
+  height: 38px;
+  padding: 0.5rem;
+  min-height: unset;
+  position: relative;
+  input {
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.v-input__control .v-field--error {
+  border: 1px solid red;
+}
+.v-select .v-select__selection:first-child {
+  line-height: 1rem;
+}
+.v-input__details {
+  min-height: unset;
+}
+.v-input {
+  position: relative;
+}
+.v-messages {
+  min-height: unset;
+}
+.v-autocomplete {
+  .v-field--dirty {
+    .v-autocomplete__selection {
+      margin-top: unset;
+    }
+  }
+}
+.v-textarea {
+  textarea {
+    height: unset;
+  }
+  .v-field--active {
+    .v-field-label.v-field-label--floating {
+      top: 2px !important;
+    }
+  }
+}
+
+label.v-field-label {
+  + textarea.v-field__input {
+    padding-top: 1rem;
+    mask-image: none;
+  }
+}

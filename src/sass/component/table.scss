@@ -1,0 +1,28 @@
+table {
+  thead {
+    white-space: nowrap;
+  }
+}
+.cellTable {
+  &.v-table .v-table__wrapper > table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid lighten(#695f5f, 50) !important;
+  }
+  tr {
+    td {
+      &:last-child {
+        border-right: 1px solid lighten(#695f5f, 50);
+      }
+    }
+  }
+  td {
+    border: 1px solid lighten(#695f5f, 50);
+    border-right: 0px;
+    ul {
+      padding: 0.5rem;
+      text-align: start;
+    }
+    .v-input {
+      display: flex;
+    }
+  }
+}

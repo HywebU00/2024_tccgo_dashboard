@@ -1,0 +1,16 @@
+{
+    "statusList": [
+        {
+            "text": "全部",
+            "value": ""
+        },
+        {
+            "text": "啟用",
+            "value": "1"
+        },
+        {
+            "text": "停用",
+            "value": "0"
+        }
+    ]
+}

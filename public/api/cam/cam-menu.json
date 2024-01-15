@@ -1,0 +1,42 @@
+[
+    {
+        "id": "system",
+        "name": "系統管理",
+        "icon": "mdi-floor-plan",
+        "job": "",
+        "child": [
+            {
+                "id": "account",
+                "name": "帳號管理",
+                "icon": "mdi-shield-lock",
+                "job": "",
+                "child": [
+                    {
+                        "id": "account-index",
+                        "name": "人員帳號管理",
+                        "icon": "mdi-account-group",
+                        "job": "/ui/form"
+                    },
+                    {
+                        "id": "account-dept-index",
+                        "name": "部門組織管理",
+                        "icon": "mdi-account-group",
+                        "job": "/ui/album"
+                    },
+                    {
+                        "id": "account-group-index",
+                        "name": "專案群組管理",
+                        "icon": "mdi-account-group",
+                        "job": "/ui/finder"
+                    },
+                    {
+                        "id": "account-role-index",
+                        "name": "角色級職管理",
+                        "icon": "mdi-account-group",
+                        "job": "/ui/tree"
+                    }
+                ]
+            }
+        ]
+    }
+]

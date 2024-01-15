@@ -1,0 +1,507 @@
+@mixin cardHover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+.albumCard {
+  height: 100%;
+  &.v-card {
+    @include cardHover;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .v-img {
+    margin: 0.75rem;
+    margin-bottom: 0;
+    border-radius: 0.2rem;
+    height: rem(200);
+    max-height: rem(200);
+  }
+  .v-card-item {
+    display: flex;
+    align-items: flex-start;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .v-card-item__content {
+    .v-card-subtitle {
+      font-weight: 700;
+      font-size: em(14);
+    }
+    p {
+      font-size: em(14);
+    }
+  }
+  .v-card-text {
+    align-items: self-end;
+    display: flex;
+  }
+
+  .iconList {
+    color: $grayText;
+    font-weight: 700;
+    .v-col {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      color: $grayText;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.albumCardList {
+  &.v-row {
+    margin-top: 0 !important;
+  }
+  &.list {
+    display: block;
+    > div {
+      max-width: unset;
+      border-bottom: 1px solid lighten($secondaryColor, 30);
+
+      &:last-child {
+        border: none;
+      }
+    }
+    .cardContainer {
+      flex-direction: row;
+      background-color: unset;
+    }
+    @include screen('tablet') {
+      .cardContainer {
+        display: block;
+      }
+      .albumCard {
+        .cardContainer {
+          .v-img {
+            margin: 0 0 1rem 0;
+            width: 100%;
+            max-width: inherit;
+            aspect-ratio: 4 / 3;
+            height: auto;
+            max-height: unset;
+          }
+        }
+      }
+      .v-card-item {
+        padding: 0 0 1rem 0;
+      }
+    }
+    .v-img {
+      max-width: rem(200);
+      height: 150px;
+      width: rem(200);
+    }
+    .v-card {
+      display: block;
+      box-shadow: unset;
+      background: unset;
+      padding: 0.5rem;
+    }
+    .albumCard {
+      .v-img {
+        margin: 0 0.5rem 0 0;
+      }
+      .v-card-item {
+        padding-top: 0;
+      }
+      .iconList {
+        justify-content: end;
+        .v-col {
+          flex-grow: unset;
+        }
+      }
+    }
+    .v-card-text {
+      padding-bottom: 0;
+    }
+  }
+}
+.photoCard {
+  &.v-card {
+    @include cardHover;
+  }
+  position: relative;
+  .checkbox {
+    z-index: 1;
+    position: absolute;
+  }
+  .img {
+    position: relative;
+    margin: 0.5rem;
+    label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .v-selection-control__wrapper {
+      top: -0.5rem;
+    }
+  }
+  &.v-card {
+    .v-card-title {
+      line-height: 1rem;
+    }
+  }
+  .v-card-title {
+    cursor: pointer;
+    font-size: em(14);
+  }
+  .info {
+    .v-card-item {
+      padding: 0;
+      margin: 0.5rem;
+    }
+  }
+  .info[aria-haspopup='dialog'] {
+    &:hover {
+      .v-card-title {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+// .dialogCard
+.dialogCard {
+  .v-card-title {
+    .v-container {
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      padding-top: rem(24);
+    }
+  }
+  .v-btn {
+    width: rem(150);
+  }
+  .formContainer {
+    .formGrp,
+    .infoGrp {
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: 2px solid #f0f0f0;
+      }
+    }
+  }
+}
+.formContainer {
+  margin-top: 0;
+  .formGrp {
+    .v-row {
+      margin-top: unset;
+      margin-bottom: unset;
+      > div {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.v-card {
+  .v-card-title {
+    .v-container {
+      padding-bottom: 0;
+    }
+  }
+  .v-card-text {
+    padding-top: 0.25rem;
+    .v-container {
+      padding-top: 0;
+    }
+  }
+  .infoTitle {
+    align-items: center;
+    padding-right: 1.25rem;
+    color: $defaultPrimary;
+    font-weight: 500;
+    margin-left: -0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    color: $dark;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      left: 8px;
+      background-color: $secondaryColor;
+      height: 2px;
+      bottom: -2px;
+      width: calc(100% - 24px);
+    }
+    @include screen('notebook') {
+      width: 100%;
+      max-width: unset;
+      flex-basis: auto;
+      padding-left: 1.25rem;
+      justify-content: flex-start;
+      padding-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .infoText {
+    margin: 0 0.75rem;
+    @include screen('tablet') {
+      margin: 0;
+    }
+  }
+
+  .infoGrp,
+  .formGrp {
+    @include screen('tablet') {
+      flex-wrap: wrap;
+    }
+    // label,
+    .infoTitle > span {
+      margin-right: 0;
+      @include screen('tablet') {
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    border-bottom: 2px solid $gray;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    @include screen('tablet') {
+      &:after {
+        display: none;
+      }
+    }
+
+    .formGrp {
+      padding-bottom: 0;
+      border-bottom: 0;
+      padding: 0;
+      &:after {
+        display: none;
+      }
+    }
+    .v-field__field,
+    .v-field {
+      box-shadow: none;
+      background: $gray;
+      border-radius: 0.5rem;
+    }
+    .v-input {
+      border-radius: 0.5rem;
+      &.v-radio-group {
+        background: unset;
+        .v-input__control {
+          border: none;
+        }
+      }
+      .v-input__control {
+        border: 1px solid lighten($gray3, 20);
+        border-radius: 0.25rem;
+      }
+      &.v-checkbox {
+        .v-input__control {
+          border: none;
+        }
+      }
+    }
+
+    .checkGrp {
+      .v-input__control {
+        border: none;
+      }
+    }
+  }
+  .formGrp_2 {
+    margin-top: 1rem;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.peopleFinderCard {
+  .v-card-text {
+    padding-top: 0 !important;
+    .v-container {
+      padding-top: 0;
+    }
+  }
+  .multipleContent {
+    .formGrpTitle {
+      max-width: rem(516);
+    }
+    select {
+      max-width: rem(516);
+      border: 1px solid lighten($gray3, 20);
+      option {
+        height: rem(43);
+        display: flex;
+        align-items: center;
+
+        &:hover,
+        &:active,
+        &:target,
+        &:focus,
+        &:checked {
+          background: $gray;
+          color: $defaultPrimary;
+        }
+      }
+    }
+  }
+  .btnList {
+    &.btnListWidth {
+      max-width: rem(120);
+    }
+    i {
+      font-size: 1.75rem;
+    }
+  }
+  .treeviewBlock {
+    .item {
+      > div {
+        padding: 0.25rem;
+      }
+    }
+  }
+  option:checked {
+    box-shadow: 0 0 10px 100px $gray inset;
+    color: $defaultPrimary;
+  }
+}
+.loginCard {
+  .logoText {
+    margin-top: rem(20);
+    margin-bottom: rem(30);
+    .v-img {
+      width: 171px;
+      margin: 0 auto;
+    }
+  }
+  margin-top: rem(125);
+  padding: rem(20);
+  background: rgba(255, 255, 255, 0.55) !important;
+  width: rem(450);
+  height: rem(488);
+  border-radius: rem(20) !important;
+
+  .v-input__control {
+    height: 43px !important;
+
+    .v-field {
+      box-shadow: none !important;
+    }
+  }
+  .v-field__input {
+    min-height: 43px;
+  }
+  .logo {
+    margin-top: rem(6);
+    .v-img {
+      width: rem(246);
+    }
+    width: rem(300);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+  }
+  .passwordInput,
+  .idInput {
+    margin-bottom: rem(6);
+  }
+  v-field &.v-sheet {
+    padding-top: rem(30);
+  }
+  .v-form {
+    width: rem(300);
+    margin: 0 auto;
+  }
+  .btnList {
+    margin-top: rem(30);
+  }
+  .logInBtn {
+    width: rem(145);
+    height: rem(45) !important;
+    // margin-right: 0.75rem;
+    font-size: rem(18);
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    // background: linear-gradient(to bottom, #3a1d1d 0%, #653737 100%) !important;
+  }
+  .signUpBtn {
+    width: rem(145);
+    height: rem(45) !important;
+    font-weight: 800;
+    font-size: rem(18);
+    letter-spacing: 0rem;
+    background: linear-gradient(to bottom, #bf5f46 0%, #d78669 100%) !important;
+  }
+  .dynaImage {
+    max-width: 140px;
+    height: 43px;
+    img {
+      object-fit: contain;
+    }
+  }
+  .v-field__prepend-inner > .v-icon {
+    color: $secondaryColor;
+    opacity: 1;
+  }
+  .v-label {
+    color: $grayText;
+    opacity: 1;
+  }
+
+  @include screen('tablet') {
+    width: unset;
+    max-width: rem(450);
+    .v-form {
+      width: unset;
+    }
+  }
+  @include screen('mobile') {
+    .logo {
+      width: unset;
+    }
+    .logInBtn {
+      width: unset;
+    }
+  }
+}
+@keyframes cardMove {
+  from {
+    margin-top: rem(100);
+  }
+  to {
+    margin-top: rem(125);
+    opacity: 1;
+  }
+}
+
+/* The element to apply the animation to */
+.loginCard {
+  margin-top: rem(100);
+  @include screen('mobile') {
+    margin-top: rem(80);
+  }
+}

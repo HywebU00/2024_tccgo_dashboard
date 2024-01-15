@@ -1,0 +1,16 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+// Customize the font size for body text
+
+// https://next.vuetifyjs.com/features/sass-variables/`
+@use 'vuetify' with (
+  $color-pack: false
+);
+
+@import 'form.scss';
+@import 'table.scss';
+@import 'grid.scss';
+@import 'pagination.scss';

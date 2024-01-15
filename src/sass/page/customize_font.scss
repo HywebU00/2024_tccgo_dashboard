@@ -1,0 +1,83 @@
+//body 預設字級
+body {
+  // font-size: 1em;
+  font-weight: normal;
+  line-height: 1.45em;
+  font-family: $fontFamily;
+  -webkit-text-size-adjust: none;
+  &.mediumSize {
+    font-size: 1em;
+  }
+  // --變更為全站
+  &.smallSize {
+    font-size: 0.938em;
+  }
+  &.largeSize {
+    font-size: 1.125em;
+  }
+}
+
+$fontSize-config: (
+  medium: (
+    class: 'mediumSize',
+    font-size: 1rem,
+    v-btn__content: 1rem,
+  ),
+  small: (
+    class: 'smallSize',
+    font-size: 1rem * 0.875,
+    v-btn__content: 1rem * 0.875,
+  ),
+  large: (
+    class: 'largeSize',
+    font-size: 1rem * 1.125,
+    v-btn__content: 1rem * 1.125,
+  ),
+);
+@each $name, $value in $fontSize-config {
+  $class: map-get($value, class);
+  $v-btn__content: map-get($value, v-btn__content);
+  $font-size: map-get($value, font-size);
+  .#{$class} {
+    .v-data-table {
+      .v-data-table-header__content {
+        font-size: $font-size;
+      }
+    }
+    table {
+      thead > tr th {
+        font-size: $font-size;
+      }
+      tr {
+        th,
+        td {
+          font-size: $font-size;
+        }
+      }
+    }
+
+    .formContainer {
+      .formGrp {
+        .v-checkbox-btn {
+          label {
+            font-size: $font-size;
+          }
+        }
+      }
+      .v-radio-group {
+        label {
+          font-size: $font-size;
+        }
+      }
+    }
+    .v-data-table-footer {
+      font-size: $font-size;
+    }
+    .v-btn__content {
+      font-size: $v-btn__content * 0.9;
+    }
+    .page .searchGrp .formGrp label {
+      font-size: $font-size;
+    }
+  }
+}
