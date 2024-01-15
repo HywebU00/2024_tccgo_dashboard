@@ -1,7 +1,7 @@
 ## 關於此專案
 
 - 框架版本號: Vuetify3 + Vue3
-- 專案名稱: 2024_tccgo_dashboard 原民會入口網
+- 專案名稱: 2024_tccgo_dashboard 台北市議會電子公報瘸文檢索系統
 - UI 設計師:
 - 切版設計師: Margo
   <br/>
