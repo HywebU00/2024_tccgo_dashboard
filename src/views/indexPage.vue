@@ -85,12 +85,12 @@ export default {
           note: "",
           // https://hywebu00.github.io/2024_tccgo_dashboard/#/ui/tree
         },
-        {
-          name: "登入頁面",
-          link: "https://hywebu00.github.io/2024_tccgo_dashboard/#/ui-login",
-          note: "",
-          // https://hywebu00.github.io/2024_tccgo_dashboard/#/ui/tree
-        },
+        // {
+        //   name: "登入頁面",
+        //   link: "https://hywebu00.github.io/2024_tccgo_dashboard/#/ui-login",
+        //   note: "",
+        //   // https://hywebu00.github.io/2024_tccgo_dashboard/#/ui/tree
+        // },
       ],
     };
   },

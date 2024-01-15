@@ -424,7 +424,9 @@ export default {
     </div>
     <v-footer class="footer">
       <v-row>
-        <v-col class="text-center"> 2023 © 原住民委員會版權所有</v-col>
+        <v-col class="text-center">
+          2024 © 台北市議會電子公報全文檢索系統版權所有</v-col
+        >
       </v-row>
     </v-footer>
   </div>
