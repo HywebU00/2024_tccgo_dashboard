@@ -404,11 +404,11 @@
   }
   margin-top: rem(125);
   padding: rem(20);
-  background: rgba(255, 255, 255, 0.55) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
   width: rem(450);
   height: rem(450);
   border-radius: rem(20) !important;
-
+  backdrop-filter: blur(5px);
   .v-input__control {
     height: 43px !important;
 
