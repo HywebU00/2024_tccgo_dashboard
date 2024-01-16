@@ -73,16 +73,6 @@
         </v-list-group>
         <!-- 案件管理 end -->
       </v-list>
-      <div class="userInfo">
-        <v-avatar image="~@/assets/account.jpg" size="40"></v-avatar>
-        <ul>
-          <li>Elle Wang</li>
-          <li>企劃處</li>
-        </ul>
-        <button>
-          <span class="material-icons-round"> logout </span>
-        </button>
-      </div>
       <button class="rounded-circle drawerBtn" @click.stop="ps.clickMenuRail()">
         <span class="material-icons-round"> arrow_forward_ios </span>
       </button>

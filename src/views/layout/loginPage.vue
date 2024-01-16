@@ -6,10 +6,7 @@
         <div class="logo mx-auto">
           <v-img class="mx-auto" cover="" src="~@/assets/logo.png"></v-img>
         </div>
-        <h2 class="logoText">
-          <v-img src="~@/assets/login_text.png"></v-img>
-        </h2>
-
+        <h2 class="logoText">電子公報全文檢索系統 管理端</h2>
         <v-form>
           <v-text-field
             prepend-inner-icon="mdi-account"

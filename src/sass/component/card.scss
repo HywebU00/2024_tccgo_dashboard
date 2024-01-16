@@ -393,7 +393,10 @@
 .loginCard {
   .logoText {
     margin-top: rem(20);
-    margin-bottom: rem(30);
+    margin-bottom: rem(20);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: rem(22);
     .v-img {
       width: 171px;
       margin: 0 auto;
@@ -403,7 +406,7 @@
   padding: rem(20);
   background: rgba(255, 255, 255, 0.55) !important;
   width: rem(450);
-  height: rem(488);
+  height: rem(450);
   border-radius: rem(20) !important;
 
   .v-input__control {
@@ -419,8 +422,11 @@
   .logo {
     margin-top: rem(6);
     .v-img {
-      width: rem(246);
+      img {
+        width: auto;
+      }
     }
+
     width: rem(300);
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff;

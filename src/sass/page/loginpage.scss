@@ -1,5 +1,5 @@
 .loginPage {
-  background: url('@/assets/login_bg.jpg') repeat-x bottom -180px left;
+  background: url('@/assets/login_bg.jpg');
+  background-size: cover;
   overflow-y: scroll;
-  background-color: #ecaa8a;
 }
