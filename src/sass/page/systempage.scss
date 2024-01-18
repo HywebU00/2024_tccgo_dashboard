@@ -187,6 +187,7 @@ td > .btnGroup {
         padding-right: 1.5rem;
         font-size: rem(16);
         font-weight: 600;
+        cursor: default;
         &.v-expansion-panel-title--active {
           padding: 1.4rem 24px;
         }
