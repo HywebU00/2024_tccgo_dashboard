@@ -147,8 +147,8 @@
     .v-table__wrapper {
       > table {
         > thead {
-          // background: $theadColor;
-          background: #f3f3f3;
+          background: $defaultTheadColor;
+          //  background: #f3f3f3;
           border-top: solid 1px #ddd;
           border-bottom: solid 2px #c1c0c0;
 
