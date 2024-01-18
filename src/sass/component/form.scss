@@ -271,11 +271,11 @@ input:-internal-autofill-selected {
   &.upload-area {
     border: none;
     border-radius: 3px;
-    background: #f0f0f0;
+    background: #fff;
   }
   thead {
-    color: #fff;
-    background-color: $defaultSecondary !important;
+    background-color: #f3f3f3 !important;
+    color: $defaultPrimary;
     border-radius: 3px 3px 0 0;
     th {
       padding: 0.5rem;
@@ -284,7 +284,8 @@ input:-internal-autofill-selected {
   p {
     padding: 1rem;
     .v-btn {
-      background: $defaultSecondary;
+      background: $defaultSecondary !important;
+      font-family: $fontFamily;
       .v-btn__content {
         color: #fff;
         opacity: 1;
