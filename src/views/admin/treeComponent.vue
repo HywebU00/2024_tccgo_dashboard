@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <h2 class="title">新增標題</h2>
     <div class="d-flex pageLinkBtn">
       <v-card>
         <v-tabs show-arrows>

@@ -39,7 +39,7 @@ td > .btnGroup {
 .page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 96px);
+  height: calc(100vh - 88px);
   overflow: hidden;
   padding: 0;
   .pageContent {
@@ -74,12 +74,13 @@ td > .btnGroup {
     h3 {
       font-size: 1.5em;
       margin: 0.25rem 0 1rem 0.75rem;
+
       line-height: 1.2em;
       font-weight: 600;
       color: $defaultPrimary;
       @include screen('tablet') {
-        font-size: 1.5em;
-        margin-left: 2.75rem;
+        font-size: 1.3em;
+        margin: 1rem 0 0 0.75rem;
       }
     }
   }
@@ -88,9 +89,13 @@ td > .btnGroup {
     margin: 0.25rem 0;
     line-height: 1.2em;
     font-weight: 600;
-    color: #fff;
-    text-shadow: $text-shadow;
-    text-align: center;
+    display: none;
+    @include screen('tablet') {
+      display: block;
+      text-align: center;
+      padding: 0.25rem 0;
+      margin: 0 2.25rem;
+    }
   }
 
   .pageLinkBtn {

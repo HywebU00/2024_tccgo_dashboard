@@ -237,6 +237,7 @@
   }
   .footer {
     background: unset;
+    padding: 0 16px 0 0;
     .v-row {
       display: flex;
       justify-content: flex-end;
@@ -250,6 +251,11 @@
       padding: 0.35rem;
       background: $defaultPrimary;
       color: #fff;
+      position: absolute;
+      bottom: 8px;
+      @media screen and (max-width: 992px) {
+        bottom: 0px;
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 .v-theme--default {
   .content {
-    background: #cecece url('@/assets/main_bg.png') repeat left top;
+    background: #cecece url('@/assets/main_bg.png') repeat;
+    min-height: 100vh;
   }
   .navDrawer {
     > .v-navigation-drawer__content {

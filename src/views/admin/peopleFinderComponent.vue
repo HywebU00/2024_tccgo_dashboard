@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <h2 class="title">新增標題</h2>
     <div class="pageContent">
       <h3>線上相片管理</h3>
       <!-- 搜尋列表 start -->
