@@ -16,17 +16,19 @@
     border-radius: 0.5rem;
     span {
       display: block;
-      width: rem(53);
-      height: rem(53);
+      width: rem(32);
+      height: rem(32);
     }
     &:hover {
       background: rgba(0, 0, 0, 0.2);
     }
     .next {
       background: url('@/assets/icon/icon_arrow_r.png') no-repeat bottom center;
+      background-size: contain;
     }
     .prev {
       background: url('@/assets/icon/icon_arrow_l.png') no-repeat bottom center;
+      background-size: contain;
     }
   }
   .carouselTitle {
