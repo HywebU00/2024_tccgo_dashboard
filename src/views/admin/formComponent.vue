@@ -45,20 +45,20 @@
                             <v-col md="9" cols="12">
                               <v-row>
                                 <v-col>
-                                  <v-autocomplete
+                                  <v-select
                                     color="secondary"
                                     variant="solo"
                                     single-line
                                     density="compact"
                                     hide-details="auto"
                                     :items="['1990', '1991', '1992']"
-                                  ></v-autocomplete>
+                                  ></v-select>
                                 </v-col>
                                 <v-col cols="auto tilde">
                                   <span>~</span>
                                 </v-col>
                                 <v-col>
-                                  <v-autocomplete
+                                  <v-select
                                     color="secondary"
                                     variant="solo"
                                     single-line
@@ -66,7 +66,7 @@
                                     placeholder=""
                                     hide-details="auto"
                                     :items="['1990', '1991', '1992']"
-                                  ></v-autocomplete>
+                                  ></v-select>
                                 </v-col>
                               </v-row>
                             </v-col>
@@ -127,7 +127,7 @@
                             <v-col>
                               <v-row>
                                 <v-col cols="12" md="12">
-                                  <v-autocomplete
+                                  <v-select
                                     color="secondary"
                                     variant="solo"
                                     single-line
@@ -135,7 +135,7 @@
                                     placeholder="輸入地址"
                                     error-messages=""
                                     :items="['台北市', '新北市', '基隆市']"
-                                  ></v-autocomplete>
+                                  ></v-select>
                                 </v-col>
                               </v-row>
                             </v-col>
@@ -275,7 +275,7 @@
                               <v-radio-group color="secondary">
                                 <v-row>
                                   <v-col cols="12" md="4">
-                                    <v-autocomplete
+                                    <v-select
                                       color="secondary"
                                       variant="solo"
                                       single-line
@@ -290,10 +290,10 @@
                                       <template v-slot:append>
                                         <span>屆</span>
                                       </template>
-                                    </v-autocomplete>
+                                    </v-select>
                                   </v-col>
                                   <v-col class="ml-3 ml-md-0">
-                                    <v-autocomplete
+                                    <v-select
                                       color="secondary"
                                       variant="solo"
                                       single-line
@@ -307,10 +307,10 @@
                                       <template v-slot:append>
                                         <span>次</span>
                                       </template>
-                                    </v-autocomplete>
+                                    </v-select>
                                   </v-col>
                                   <v-col cols="2">
-                                    <v-autocomplete
+                                    <v-select
                                       color="secondary"
                                       variant="solo"
                                       single-line
@@ -318,7 +318,7 @@
                                       hide-details="auto"
                                       :items="['選項ㄧ', '選項二', '選項三']"
                                     >
-                                    </v-autocomplete>
+                                    </v-select>
                                   </v-col>
                                   <v-col>
                                     <v-text-field
@@ -339,7 +339,7 @@
                                 </v-row>
                                 <v-row>
                                   <v-col>
-                                    <v-autocomplete
+                                    <v-select
                                       color="secondary"
                                       variant="solo"
                                       single-line
@@ -354,7 +354,7 @@
                                       <template v-slot:append>
                                         <span>屆休會</span>
                                       </template>
-                                    </v-autocomplete>
+                                    </v-select>
                                   </v-col>
                                 </v-row>
                               </v-radio-group>
@@ -425,14 +425,14 @@
                   >
                 </v-col>
                 <v-col>
-                  <v-autocomplete
+                  <v-select
                     color="secondary"
                     variant="solo"
                     error-messages=""
                     single-line
                     density="compact"
                     :items="['布農族', '阿美族', '卑南族']"
-                  ></v-autocomplete>
+                  ></v-select>
                 </v-col>
               </v-row>
               <v-row class="d-flex formGrp">
@@ -565,7 +565,7 @@
                 <v-col>
                   <v-row>
                     <v-col cols="6" md="3">
-                      <v-autocomplete
+                      <v-select
                         color="secondary"
                         variant="solo"
                         single-line
@@ -574,10 +574,10 @@
                         placeholder="輸入地址"
                         error-messages=""
                         :items="['台北市', '新北市', '基隆市']"
-                      ></v-autocomplete>
+                      ></v-select>
                     </v-col>
                     <v-col cols="6" md="3">
-                      <v-autocomplete
+                      <v-select
                         variant="solo"
                         single-line
                         color="secondary"
@@ -586,7 +586,7 @@
                         hide-details="auto"
                         error-messages=""
                         :items="['台北市', '新北市', '基隆市']"
-                      ></v-autocomplete>
+                      ></v-select>
                     </v-col>
                     <v-col cols="12" md="6">
                       <v-text-field
@@ -606,7 +606,7 @@
                 <v-col>
                   <v-row>
                     <v-col cols="12" md="6">
-                      <v-autocomplete
+                      <v-select
                         color="secondary"
                         variant="solo"
                         single-line
@@ -614,10 +614,10 @@
                         density="compact"
                         placeholder="輸入地址"
                         :items="['台北市', '新北市', '基隆市']"
-                      ></v-autocomplete>
+                      ></v-select>
                     </v-col>
                     <v-col cols="12" md="6">
-                      <v-autocomplete
+                      <v-select
                         variant="solo"
                         single-line
                         color="secondary"
@@ -626,7 +626,7 @@
                         placeholder="輸入地址"
                         error-messages=""
                         :items="['台北市', '新北市', '基隆市']"
-                      ></v-autocomplete>
+                      ></v-select>
                     </v-col>
                   </v-row>
                 </v-col>
@@ -640,7 +640,7 @@
                   <v-radio-group color="secondary">
                     <v-row>
                       <v-col cols="12" md="4">
-                        <v-autocomplete
+                        <v-select
                           color="secondary"
                           variant="solo"
                           single-line
@@ -655,10 +655,10 @@
                           <template v-slot:append>
                             <span>屆</span>
                           </template>
-                        </v-autocomplete>
+                        </v-select>
                       </v-col>
                       <v-col class="ml-3 ml-md-0">
-                        <v-autocomplete
+                        <v-select
                           color="secondary"
                           variant="solo"
                           single-line
@@ -672,10 +672,10 @@
                           <template v-slot:append>
                             <span>次</span>
                           </template>
-                        </v-autocomplete>
+                        </v-select>
                       </v-col>
                       <v-col cols="2">
-                        <v-autocomplete
+                        <v-select
                           color="secondary"
                           variant="solo"
                           single-line
@@ -683,7 +683,7 @@
                           hide-details="auto"
                           :items="['選項ㄧ', '選項二', '選項三']"
                         >
-                        </v-autocomplete>
+                        </v-select>
                       </v-col>
                       <v-col>
                         <v-text-field
@@ -704,7 +704,7 @@
                     </v-row>
                     <v-row>
                       <v-col>
-                        <v-autocomplete
+                        <v-select
                           color="secondary"
                           variant="solo"
                           single-line
@@ -719,7 +719,7 @@
                           <template v-slot:append>
                             <span>屆休會</span>
                           </template>
-                        </v-autocomplete>
+                        </v-select>
                       </v-col>
                     </v-row>
                   </v-radio-group>
