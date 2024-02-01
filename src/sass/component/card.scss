@@ -325,7 +325,13 @@
         }
       }
     }
-
+    > .v-col > .v-radio-group {
+      .v-input {
+        .v-input__control {
+          border: 1px solid lighten($gray3, 20);
+        }
+      }
+    }
     .checkGrp {
       .v-input__control {
         border: none;

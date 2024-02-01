@@ -264,6 +264,93 @@
                             </v-col>
                           </v-row>
                         </v-col>
+                        <!-- 管制代號end -->
+                        <!-- 屆會次別 start -->
+                        <v-col class="col-12-item" md="12" cols="12">
+                          <v-row class="d-flex formGrp">
+                            <v-col md="3" cols="12">
+                              <label>屆會次別:</label>
+                            </v-col>
+                            <v-col>
+                              <v-radio-group color="secondary">
+                                <v-row>
+                                  <v-col>
+                                    <v-autocomplete
+                                      color="secondary"
+                                      variant="solo"
+                                      single-line
+                                      density="compact"
+                                      hide-details="auto"
+                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                    >
+                                      <template v-slot:prepend>
+                                        <v-radio value="true"></v-radio>
+                                        <span>第</span>
+                                      </template>
+                                      <template v-slot:append>
+                                        <span>屆</span>
+                                      </template>
+                                    </v-autocomplete>
+                                  </v-col>
+                                  <v-col>
+                                    <v-autocomplete
+                                      color="secondary"
+                                      variant="solo"
+                                      single-line
+                                      density="compact"
+                                      hide-details="auto"
+                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                    >
+                                      <template v-slot:prepend>
+                                        <span>第</span>
+                                      </template>
+                                      <template v-slot:append>
+                                        <span>次</span>
+                                      </template>
+                                    </v-autocomplete>
+                                  </v-col>
+                                  <v-col>
+                                    <v-text-field
+                                      placeholder="886"
+                                      density="compact"
+                                      single-line
+                                      variant="solo"
+                                      hide-details="auto"
+                                    >
+                                      <template v-slot:prepend>
+                                        <span>第</span>
+                                      </template>
+                                      <template v-slot:append>
+                                        <span>次會議</span>
+                                      </template>
+                                    </v-text-field>
+                                  </v-col>
+                                </v-row>
+                                <v-row>
+                                  <v-col>
+                                    <v-autocomplete
+                                      color="secondary"
+                                      variant="solo"
+                                      single-line
+                                      density="compact"
+                                      hide-details="auto"
+                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                    >
+                                      <template v-slot:prepend>
+                                        <v-radio value="false"></v-radio>
+                                        <span>第</span>
+                                      </template>
+                                      <template v-slot:append>
+                                        <span>屆休會</span>
+                                      </template>
+                                    </v-autocomplete>
+                                  </v-col>
+                                </v-row>
+                              </v-radio-group>
+                            </v-col>
+                          </v-row>
+                        </v-col>
+                        <!-- 屆會次別 end -->
                       </v-row>
                       <v-row>
                         <v-col cols="12" class="pt-0">
@@ -453,7 +540,7 @@
                   <label for="">單選 </label>
                 </v-col>
                 <v-col>
-                  <v-radio-group inline h color="secondary" hide-details="auto">
+                  <v-radio-group inline color="secondary" hide-details="auto">
                     <v-radio label="是" value="true"></v-radio>
                     <v-radio label="否" value="false"></v-radio>
                   </v-radio-group>
@@ -533,6 +620,90 @@
                   </v-row>
                 </v-col>
               </v-row>
+              <!-- 屆會次別 start -->
+              <v-row class="d-flex formGrp">
+                <v-col md="2" cols="12">
+                  <label>屆會次別:</label>
+                </v-col>
+                <v-col>
+                  <v-radio-group color="secondary">
+                    <v-row>
+                      <v-col>
+                        <v-autocomplete
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
+                          <template v-slot:prepend>
+                            <v-radio value="true"></v-radio>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>屆</span>
+                          </template>
+                        </v-autocomplete>
+                      </v-col>
+                      <v-col>
+                        <v-autocomplete
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
+                          <template v-slot:prepend>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>次</span>
+                          </template>
+                        </v-autocomplete>
+                      </v-col>
+                      <v-col>
+                        <v-text-field
+                          placeholder="886"
+                          density="compact"
+                          single-line
+                          variant="solo"
+                          hide-details="auto"
+                        >
+                          <template v-slot:prepend>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>次會議</span>
+                          </template>
+                        </v-text-field>
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col>
+                        <v-autocomplete
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
+                          <template v-slot:prepend>
+                            <v-radio value="false"></v-radio>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>屆休會</span>
+                          </template>
+                        </v-autocomplete>
+                      </v-col>
+                    </v-row>
+                  </v-radio-group>
+                </v-col>
+              </v-row>
+              <!-- 屆會次別 end -->
               <!-- 按鈕列 start -->
               <v-row class="d-flex formGrp">
                 <v-col cols="12" md="2" class="">
@@ -710,6 +881,7 @@ export default {
     page: 1,
     panel: 1,
     panel1: 1,
+    radios: "",
   }),
   created() {
     ps.setTopNavPageTiltle("帳號管理");
