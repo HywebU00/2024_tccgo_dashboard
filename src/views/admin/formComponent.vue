@@ -281,7 +281,7 @@
                                       single-line
                                       density="compact"
                                       hide-details="auto"
-                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                      :items="['選項ㄧ', '選項二']"
                                     >
                                       <template v-slot:prepend>
                                         <v-radio value="true"></v-radio>
@@ -309,14 +309,14 @@
                                       </template>
                                     </v-select>
                                   </v-col>
-                                  <v-col cols="2">
+                                  <v-col cols="3">
                                     <v-select
                                       color="secondary"
                                       variant="solo"
                                       single-line
                                       density="compact"
                                       hide-details="auto"
-                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                      :items="['臨時大會', '定期大會']"
                                     >
                                     </v-select>
                                   </v-col>
@@ -639,14 +639,14 @@
                 <v-col>
                   <v-radio-group color="secondary">
                     <v-row>
-                      <v-col cols="12" md="4">
+                      <v-col cols="12" lg="4">
                         <v-select
                           color="secondary"
                           variant="solo"
                           single-line
                           density="compact"
                           hide-details="auto"
-                          :items="['選項ㄧ', '選項二', '選項三']"
+                          :items="['選項ㄧ', '選項二']"
                         >
                           <template v-slot:prepend>
                             <v-radio value="true"></v-radio>
@@ -657,7 +657,7 @@
                           </template>
                         </v-select>
                       </v-col>
-                      <v-col class="ml-3 ml-md-0">
+                      <v-col class="ml-3 ml-lg-0">
                         <v-select
                           color="secondary"
                           variant="solo"
@@ -674,14 +674,14 @@
                           </template>
                         </v-select>
                       </v-col>
-                      <v-col cols="2">
+                      <v-col cols="3">
                         <v-select
                           color="secondary"
                           variant="solo"
                           single-line
                           density="compact"
                           hide-details="auto"
-                          :items="['選項ㄧ', '選項二', '選項三']"
+                          :items="['臨時大會', '定期大會']"
                         >
                         </v-select>
                       </v-col>
