@@ -274,7 +274,7 @@
                             <v-col>
                               <v-radio-group color="secondary">
                                 <v-row>
-                                  <v-col>
+                                  <v-col cols="12" md="4">
                                     <v-autocomplete
                                       color="secondary"
                                       variant="solo"
@@ -292,7 +292,7 @@
                                       </template>
                                     </v-autocomplete>
                                   </v-col>
-                                  <v-col>
+                                  <v-col class="ml-3 ml-md-0">
                                     <v-autocomplete
                                       color="secondary"
                                       variant="solo"
@@ -307,6 +307,17 @@
                                       <template v-slot:append>
                                         <span>次</span>
                                       </template>
+                                    </v-autocomplete>
+                                  </v-col>
+                                  <v-col cols="2">
+                                    <v-autocomplete
+                                      color="secondary"
+                                      variant="solo"
+                                      single-line
+                                      density="compact"
+                                      hide-details="auto"
+                                      :items="['選項ㄧ', '選項二', '選項三']"
+                                    >
                                     </v-autocomplete>
                                   </v-col>
                                   <v-col>
@@ -628,7 +639,7 @@
                 <v-col>
                   <v-radio-group color="secondary">
                     <v-row>
-                      <v-col>
+                      <v-col cols="12" md="4">
                         <v-autocomplete
                           color="secondary"
                           variant="solo"
@@ -646,7 +657,7 @@
                           </template>
                         </v-autocomplete>
                       </v-col>
-                      <v-col>
+                      <v-col class="ml-3 ml-md-0">
                         <v-autocomplete
                           color="secondary"
                           variant="solo"
@@ -661,6 +672,17 @@
                           <template v-slot:append>
                             <span>次</span>
                           </template>
+                        </v-autocomplete>
+                      </v-col>
+                      <v-col cols="2">
+                        <v-autocomplete
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
                         </v-autocomplete>
                       </v-col>
                       <v-col>
