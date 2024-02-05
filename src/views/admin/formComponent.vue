@@ -274,7 +274,7 @@
                             <v-col>
                               <v-radio-group color="secondary">
                                 <v-row>
-                                  <v-col cols="12" md="4">
+                                  <v-col cols="6" lg="4">
                                     <v-select
                                       color="secondary"
                                       variant="solo"
@@ -309,7 +309,7 @@
                                       </template>
                                     </v-select>
                                   </v-col>
-                                  <v-col cols="3">
+                                  <v-col cols="6" lg="3">
                                     <v-select
                                       color="secondary"
                                       variant="solo"
@@ -639,7 +639,7 @@
                 <v-col>
                   <v-radio-group color="secondary">
                     <v-row>
-                      <v-col cols="12" lg="4">
+                      <v-col cols="6" lg="4">
                         <v-select
                           color="secondary"
                           variant="solo"
@@ -657,7 +657,7 @@
                           </template>
                         </v-select>
                       </v-col>
-                      <v-col class="ml-3 ml-lg-0">
+                      <v-col class="ml-3 ml-md-0">
                         <v-select
                           color="secondary"
                           variant="solo"
@@ -674,7 +674,7 @@
                           </template>
                         </v-select>
                       </v-col>
-                      <v-col cols="3">
+                      <v-col cols="6" lg="3">
                         <v-select
                           color="secondary"
                           variant="solo"
@@ -724,6 +724,94 @@
                     </v-row>
                   </v-radio-group>
                 </v-col>
+                <!-- <v-col>
+                  <v-radio-group color="secondary">
+                    <v-row>
+                      <v-col cols="6" lg="4">
+                        <v-select
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二']"
+                        >
+                          <template v-slot:prepend>
+                            <v-radio value="true"></v-radio>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>屆</span>
+                          </template>
+                        </v-select>
+                      </v-col>
+                      <v-col clo="6" class="ml-3 ml-lg-0">
+                        <v-select
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
+                          <template v-slot:prepend>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>次</span>
+                          </template>
+                        </v-select>
+                      </v-col>
+                      <v-col cols="6" md="3">
+                        <v-select
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['臨時大會', '定期大會']"
+                        >
+                        </v-select>
+                      </v-col>
+                      <v-col>
+                        <v-text-field
+                          placeholder="886"
+                          density="compact"
+                          single-line
+                          variant="solo"
+                          hide-details="auto"
+                        >
+                          <template v-slot:prepend>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>次會議</span>
+                          </template>
+                        </v-text-field>
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col>
+                        <v-select
+                          color="secondary"
+                          variant="solo"
+                          single-line
+                          density="compact"
+                          hide-details="auto"
+                          :items="['選項ㄧ', '選項二', '選項三']"
+                        >
+                          <template v-slot:prepend>
+                            <v-radio value="false"></v-radio>
+                            <span>第</span>
+                          </template>
+                          <template v-slot:append>
+                            <span>屆休會</span>
+                          </template>
+                        </v-select>
+                      </v-col>
+                    </v-row>
+                  </v-radio-group>
+                </v-col> -->
               </v-row>
               <!-- 屆會次別 end -->
               <!-- 按鈕列 start -->
