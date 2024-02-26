@@ -43,12 +43,58 @@
                 <DataTable />
               </v-window-item>
               <v-window-item value="two">
-                <div class="btnGroup right mb-2">
+                <v-row class="my-1">
+                  <v-col cols="12" md="8">
+                    <v-container class="inputGroup pb-0 ml-0">
+                      <v-row class="formGrp">
+                        <v-col cols="6" md="7" lg="4" class="py-0 d-flex">
+                          <label class="text-primary" for="">列印區間</label>
+                          <v-text-field
+                            density="compact"
+                            single-line
+                            variant="solo"
+                            hide-details="auto"
+                            class="mr-0"
+                          >
+                            <template v-slot:append>
+                              <v-icon> mdi-minus </v-icon>
+                            </template>
+                          </v-text-field>
+                          <v-text-field
+                            class="ml-1"
+                            density="compact"
+                            hide-details="auto"
+                            single-line
+                            variant="solo"
+                          ></v-text-field>
+                        </v-col>
+                        <v-col cols="6" md="5" lg="3" class="py-0 d-flex">
+                          <label class="text-primary" for="">開始序號</label>
+                          <v-text-field
+                            density="compact"
+                            hide-details="auto"
+                            single-line
+                            variant="solo"
+                          ></v-text-field>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                  </v-col>
+                  <v-col>
+                    <div class="btnGroup right mb-0 mt-0">
+                      <v-btn color="export" elevation="0">匯出報表</v-btn>
+                      <v-btn color="import" elevation="0">匯入報表</v-btn>
+                      <v-btn color="cancel" elevation="0">刪除</v-btn>
+                      <v-btn color="submit" elevation="0">新增</v-btn>
+                    </div>
+                  </v-col>
+                </v-row>
+                <!-- <div class="btnGroup right mb-0 mt-4">
                   <v-btn color="export" elevation="0">匯出報表</v-btn>
                   <v-btn color="import" elevation="0">匯入報表</v-btn>
                   <v-btn color="cancel" elevation="0">刪除</v-btn>
                   <v-btn color="submit" elevation="0">新增</v-btn>
-                </div>
+                </div> -->
                 <v-table>
                   <thead>
                     <tr>

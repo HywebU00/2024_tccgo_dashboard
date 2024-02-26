@@ -80,7 +80,7 @@ td > .btnGroup {
       color: $defaultPrimary;
       @include screen('tablet') {
         font-size: 1.3em;
-        margin: 1rem 0 0 0.75rem;
+        margin: 0rem 0 0.5rem 0.75rem;
       }
     }
   }
@@ -450,6 +450,32 @@ td > .btnGroup {
         &:hover {
           color: $secondaryColor;
         }
+      }
+    }
+  }
+}
+.inputGroup {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 0;
+  label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .v-input__append {
+    margin-inline-start: 6px !important;
+  }
+  .v-field__input {
+    height: 36px;
+  }
+  @include screen('mobile') {
+    .v-row {
+      display: block;
+      > div {
+        max-width: 100%;
+        margin-bottom: 0.5rem;
       }
     }
   }
