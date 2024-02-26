@@ -484,3 +484,37 @@ td > .btnGroup {
     }
   }
 }
+.lightBoxInfo {
+  .title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+  ol {
+    margin-left: 1.5rem;
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+  ul {
+    margin-bottom: 1rem;
+    li {
+      margin-bottom: 1.5rem;
+      .block {
+        display: block;
+        margin: 1rem 0;
+        background: mix(#46b9e7, #fff, 10%); //#f0efef;
+        padding: 1rem;
+        span {
+          line-height: 3rem;
+        }
+      }
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+}

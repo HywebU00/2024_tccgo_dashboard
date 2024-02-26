@@ -277,6 +277,7 @@
         <div class="">
           <v-container>
             <PeopleFinder />
+            <lightBox />
           </v-container>
           <!-- Pagination start -->
           <v-row>
@@ -298,6 +299,7 @@
 
 <script>
 import PeopleFinder from "@/components/PeopleFinder.vue";
+import lightBox from "@/components/lightBox.vue";
 import { maskStore, pageStting } from "@/stores/storage.js";
 const ps = pageStting();
 export default {
@@ -345,6 +347,7 @@ export default {
   },
   components: {
     PeopleFinder,
+    lightBox,
   },
 };
 </script>
