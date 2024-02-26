@@ -44,9 +44,9 @@
               </v-window-item>
               <v-window-item value="two">
                 <v-row class="my-1">
-                  <v-col cols="12" md="8">
-                    <v-container class="inputGroup pb-0 ml-0">
-                      <v-row class="formGrp">
+                  <v-col>
+                    <v-container class="inputGroup pb-0 ml-0 pr-0">
+                      <v-row class="formGrp d-flex justify-end">
                         <v-col cols="6" md="7" lg="4" class="py-0 d-flex">
                           <label class="text-primary" for="">列印區間</label>
                           <v-text-field
@@ -80,7 +80,7 @@
                       </v-row>
                     </v-container>
                   </v-col>
-                  <v-col>
+                  <v-col cols="12" md="auto">
                     <div class="btnGroup right mb-0 mt-0">
                       <v-btn color="export" elevation="0">匯出報表</v-btn>
                       <v-btn color="import" elevation="0">匯入報表</v-btn>

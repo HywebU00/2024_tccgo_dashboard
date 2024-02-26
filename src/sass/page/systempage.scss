@@ -456,6 +456,10 @@ td > .btnGroup {
 }
 .inputGroup {
   max-width: 600px;
+  max-width: unset !important;
+  @media screen and (max-width: 960px) {
+    max-width: 98% !important;
+  }
   margin-left: auto;
   margin-right: 0;
   label {
@@ -472,7 +476,7 @@ td > .btnGroup {
   }
   @include screen('mobile') {
     .v-row {
-      display: block;
+      display: block !important;
       > div {
         max-width: 100%;
         margin-bottom: 0.5rem;
