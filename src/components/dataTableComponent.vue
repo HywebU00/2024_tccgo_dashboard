@@ -23,7 +23,7 @@
           <div class="btnGroup">
             <v-btn elevation="0" size="small" variant="tonal">
               <v-img
-                :width="22"
+                :width="20"
                 aspect-ratio="1/1"
                 cover
                 src="~@/assets/icon_write.png"
@@ -31,7 +31,7 @@
             </v-btn>
             <v-btn variant="tonal" elevation="0" size="small">
               <v-img
-                :width="22"
+                :width="20"
                 aspect-ratio="1/1"
                 cover
                 src="~@/assets/icon_fast.png"

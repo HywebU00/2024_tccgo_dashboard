@@ -15,6 +15,9 @@
 .v-select .v-select__selection:first-child {
   line-height: 1rem;
 }
+.v-select .v-field.v-field {
+  padding-right: 0;
+}
 .v-input__details {
   min-height: unset;
 }
@@ -46,5 +49,13 @@ label.v-field-label {
   + textarea.v-field__input {
     padding-top: 1rem;
     mask-image: none;
+  }
+}
+.v-input--horizontal {
+  .v-input__append {
+    margin-inline-start: 8px;
+  }
+  .v-input__prepend {
+    margin-inline-end: 8px;
   }
 }
