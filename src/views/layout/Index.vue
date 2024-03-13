@@ -14,7 +14,18 @@
         >
         </v-tab>
       </v-tabs>
-      <div class="userName">Elle Wang /<span>企劃處</span></div>
+      <!-- <div class="userName">Elle Wang /<span>企劃處</span></div> -->
+      <div class="userName">
+        Elle Wang /<span>企劃處</span>
+        <v-select
+          variant="outlined"
+          density="compact"
+          hide-details="none"
+          color="export"
+          :items="['Elle Wang', 'Long Li', 'Nyrie Lin']"
+        >
+        </v-select>
+      </div>
       <v-btn class="loginBtn"> 登入 </v-btn>
     </v-app-bar>
     <router-view />

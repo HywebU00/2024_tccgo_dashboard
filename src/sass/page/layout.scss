@@ -238,12 +238,27 @@ html {
   margin-right: 1rem;
   color: mix(#000, $defaultSecondary, 40%);
   text-wrap: nowrap;
+
+  + button {
+    margin-top: 0.75rem;
+  }
+  .v-field__input {
+    height: 28px;
+    padding: 0 0.5rem;
+  }
+  .v-select__selection-text {
+    font-size: 12px;
+  }
   @include screen('tablet') {
     span {
       display: block;
     }
+    .v-input {
+      display: none;
+    }
   }
 }
+
 //左側選單點擊收起
 .navDrawer.hidden {
   > .v-navigation-drawer__content {
