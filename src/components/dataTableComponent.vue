@@ -34,10 +34,20 @@
                 :width="20"
                 aspect-ratio="1/1"
                 cover
+                src="~@/assets/icon_work.png"
+                alt=""
+              ></v-img>
+            </v-btn>
+            <v-btn variant="tonal" elevation="0" size="small">
+              <v-img
+                :width="20"
+                aspect-ratio="1/1"
+                cover
                 src="~@/assets/icon_fast.png"
                 alt=""
               ></v-img>
             </v-btn>
+
             <v-btn elevation="0" color="cancel" size="small">刪除</v-btn>
             <v-btn elevation="0" color="submit" size="small">新增</v-btn>
           </div>
