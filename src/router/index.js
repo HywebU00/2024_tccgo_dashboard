@@ -34,7 +34,7 @@ const routes = [
           {
             path: "/ui/mp",
             name: "ui",
-            component: () => import("@/views/admin/homeComponent.vue"),
+            component: () => import("@/views/admin/HomeComponent.vue"),
           },
           {
             path: "/ui/tree",

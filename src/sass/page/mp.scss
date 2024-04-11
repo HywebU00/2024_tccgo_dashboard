@@ -62,11 +62,12 @@
     }
   }
 
+  .systemToolSection,
   .commonToolSection {
     .v-card {
       padding: 0em 2em;
 
-      @include screen('mobile') {
+      @include screen('tablet') {
         flex-wrap: wrap;
         padding: 1em 2rem;
       }
@@ -77,6 +78,7 @@
         width: 100%;
       }
     }
+
     display: flex;
     align-items: center;
     .v-list {
@@ -87,6 +89,29 @@
         padding-inline-start: 0.25rem !important;
       }
     }
+    .info {
+      display: flex;
+      align-items: center;
+      @include screen('mobile') {
+        flex-wrap: wrap;
+      }
+      .title {
+        white-space: nowrap;
+        font-size: 0.95rem;
+      }
+    }
+  }
+  .light_pass,
+  .light_error {
+    width: 15px;
+    height: 15px;
+    background-color: #7aed33;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    display: block;
+  }
+  .light_error {
+    background-color: #f73636;
   }
   .languageSection {
     .v-list-item-title {
@@ -233,6 +258,84 @@
       .v-list {
         margin-left: 0;
       }
+    }
+  }
+
+  .controlStand {
+    .v-col {
+      .title {
+        line-height: 28px;
+      }
+      .cardList {
+        .v-card {
+          display: flex;
+          justify-content: center;
+          border-radius: 5px !important;
+          min-height: 8rem;
+          .num {
+            font-size: 3rem;
+            color: #fff;
+            line-height: 3.2rem;
+          }
+          .text {
+            margin-left: 0.5rem;
+            color: #fff;
+          }
+        }
+      }
+
+      &:first-child {
+        .cardList {
+          > .v-card {
+            background: #747474;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .cardList {
+          > .v-card {
+            background: #087ea6;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .cardList {
+          > .v-card {
+            background: #00b7d2;
+          }
+        }
+      }
+    }
+  }
+  .portCard {
+    .v-card {
+      .light_pass,
+      .light_error {
+        width: 30px;
+        margin: 0 0 0 0.5rem;
+        height: 30px;
+        border-radius: 5px;
+        line-height: 30px;
+      }
+    }
+  }
+  .chartNum {
+    font-size: 3rem;
+    font-family: serif;
+    color: $defaultSecondary;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      margin-left: 0.5rem;
+    }
+    span {
+      display: block;
+      margin-left: 0.5rem;
+      color: $defaultPrimary;
+      font-family: sans-serif, 'Noto Sans', Lato, 'PingFang TC';
+      font-size: 1rem;
     }
   }
   .footer {

@@ -94,14 +94,153 @@ export default {
             </v-col>
           </v-row>
           <!-- 常用功能 end -->
-
+          <!-- 系統功能 start -->
+          <v-row class="systemToolSection">
+            <v-col class="pb-2">
+              <v-card class="d-flex align-center">
+                <h3 class="title py-3">
+                  <span class="light_pass"></span>
+                  <!-- <span class="light_error"></span> -->
+                  系統功能連線正常
+                </h3>
+                <div class="ml-auto d-flex align-center">
+                  <div class="info d-flex">
+                    <div class="mr-2 title">最後更新時間:</div>
+                    <v-chip class="mr-2" size="small">10:22:23</v-chip>
+                    <v-chip class="mr-2" size="small">MAR</v-chip>
+                    <v-chip class="mr-2" size="small">21th</v-chip>
+                    <v-chip class="mr-2" size="small">2023</v-chip>
+                  </div>
+                  <v-btn
+                    class="elevation-0"
+                    size="small"
+                    append-icon="mdi-bell-outline"
+                    >系統通知
+                  </v-btn>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+          <!-- 系統功能 end -->
+          <!-- 控制台 start -->
+          <v-row class="systemSection controlStand mx-0">
+            <v-col class="pt-1 pb-2">
+              <v-card>
+                <h3 class="title">
+                  <span class="icon"></span>
+                  前台瀏覽人次
+                </h3>
+                <v-row class="cardList">
+                  <v-card class="w-100">
+                    <div class="num">368</div>
+                  </v-card>
+                  <v-chip class="ml-auto" variant="text">系統通知</v-chip>
+                </v-row>
+              </v-card>
+            </v-col>
+            <v-col class="pt-1 pb-2">
+              <v-card>
+                <h3 class="title">
+                  <span class="icon"></span>
+                  管理端登入人數
+                </h3>
+                <v-row class="cardList">
+                  <v-card class="w-100">
+                    <div class="num">36</div>
+                  </v-card>
+                  <v-chip class="ml-auto" variant="text">管理端</v-chip>
+                </v-row>
+              </v-card>
+            </v-col>
+            <v-col class="pt-1 pb-2">
+              <v-card>
+                <h3 class="title">
+                  <span class="icon"></span>
+                  前台使用者登入人次
+                </h3>
+                <v-row class="cardList">
+                  <v-card class="w-100">
+                    <div class="num">38</div>
+                    <span class="text"> / day</span>
+                  </v-card>
+                  <v-chip class="ml-auto" variant="text">電子公報前台</v-chip>
+                </v-row>
+              </v-card>
+            </v-col>
+          </v-row>
+          <!--控制台 end -->
+          <!-- web主機btn start -->
+          <v-row>
+            <v-col class="pb-2">
+              <v-btn class="ml-auto elevation-0" append-icon="mdi-magnify"
+                >WEB主機 <span>192.112.4.93</span>
+              </v-btn></v-col
+            >
+          </v-row>
+          <!-- web主機btn end -->
+          <!-- 系統功能圖表3 start -->
+          <v-row class="systemSection mx-0">
+            <v-col class="pt-1 pb-2" md="4">
+              <v-card class="h-100">
+                <h3 class="title">
+                  <span class="icon"></span>
+                  CPU
+                </h3>
+                <v-row class="cardList"> </v-row>
+              </v-card>
+            </v-col>
+            <v-col class="pt-1 pb-2" md="4">
+              <v-card class="h-100">
+                <h3 class="title">
+                  <span class="icon"></span>
+                  MEM
+                </h3>
+                <v-row class="cardList"> </v-row>
+              </v-card>
+            </v-col>
+            <v-col class="pt-1 pb-2" md="4">
+              <v-card class="h-100 portCard">
+                <h3 class="title">
+                  <span class="icon"></span>
+                  PORT
+                </h3>
+                <v-row class="cardList">
+                  <v-col md="7" class="">
+                    <v-row>
+                      <v-col cols="12" class="card">
+                        <v-card class="d-flex justify-space-between">
+                          <h4>80</h4>
+                          <div><span class="light_pass">S</span></div>
+                        </v-card>
+                      </v-col>
+                      <v-col cols="12" class="card">
+                        <v-card class="d-flex justify-space-between">
+                          <h4>8080</h4>
+                          <div>
+                            <div><span class="light_error">F</span></div>
+                          </div>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                  <v-col md="5" class="d-flex justify-center">
+                    <div class="chartNum">
+                      <div class="num">50</div>
+                      <span>%</span>
+                    </div>
+                  </v-col>
+                </v-row>
+              </v-card>
+            </v-col>
+          </v-row>
+          <!-- 系統功能圖表3 end-->
           <!-- 每日族語 start -->
           <v-row class="languageSection">
             <v-col class="pt-1 pb-2">
               <v-card>
                 <h3 class="title">
                   <span class="icon"></span>
-                  每日族語
+                  每日族語2
                 </h3>
                 <v-list class="d-md-flex d-block justify-space-between">
                   <v-list-item>
