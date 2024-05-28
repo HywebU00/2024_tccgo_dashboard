@@ -15,7 +15,7 @@ import { aliases, mdi } from "vuetify/iconsets/mdi";
 import { fa } from "vuetify/iconsets/fa4";
 import { md1 } from "vuetify/blueprints";
 import { VDataTableServer } from "vuetify/labs/VDataTable";
-
+//import * as components from "vuetify/components";
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 
 export default createVuetify({
@@ -49,6 +49,7 @@ export default createVuetify({
   },
   components: {
     VDataTableServer,
+    // ...components,
   },
   icons: {
     defaultSet: "mdi",

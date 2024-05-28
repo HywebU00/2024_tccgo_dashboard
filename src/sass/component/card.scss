@@ -392,8 +392,11 @@
     }
   }
   option:checked {
-    box-shadow: 0 0 10px 100px $gray inset;
-    color: $defaultPrimary;
+    box-shadow: 0 0 10px 100px #a2a2a2 inset !important;
+    color: $defaultPrimary !important;
+    box-shadow: none;
+    color: #fff !important;
+    background: #959595 !important;
   }
 }
 .loginCard {
