@@ -96,6 +96,7 @@ html {
     }
     .v-list {
       flex-grow: 1;
+      overflow-y: scroll;
       .v-list-item--nav:not(:only-child) {
         margin-bottom: 0;
       }
@@ -163,18 +164,18 @@ html {
     position: absolute;
     display: flex;
     justify-content: center;
-    right: -20px;
+    right: -27px;
     top: calc(50vh - 60px);
-
+    clip-path: circle(57.5% at 0 50%);
     background: url('@/assets/body_bg.png') repeat left top;
-    width: rem(45);
+    width: rem(32);
     height: rem(45);
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 3px;
-    z-index: -1;
+    border-radius: 0 !important;
     span {
       transition: 0.5s all;
-      margin-left: 0.5rem;
+      margin-left: -1.25rem;
       color: $defaultSecondary;
       font-size: 1.25rem;
       margin-right: 0.25rem;
