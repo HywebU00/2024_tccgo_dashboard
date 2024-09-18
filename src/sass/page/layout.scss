@@ -38,7 +38,10 @@ html {
     .drawerBtn {
       top: 0rem;
       border-radius: 0 20px 20px 0 !important;
-      right: -40px;
+      right: -30px;
+      span {
+        margin-left: -0.75rem;
+      }
     }
     > .v-navigation-drawer__content {
       .logoImg {
